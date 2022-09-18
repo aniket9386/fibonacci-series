@@ -37,7 +37,7 @@ const Home = () => {
             fn = x + y;
             x = y;
             y = fn;
-            num++
+            ++num
         }
         setInputn({ number1: "", number2: "" })
 
