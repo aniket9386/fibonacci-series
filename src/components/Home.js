@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-    let history = useNavigate();
-    useEffect(() => {
+    // let history = useNavigate();
+    // useEffect(() => {
 
-        if (localStorage.getItem('token')) {
-            history("/");
-        } else {
-            history("/login");
-        }
-        // eslint-disable-next-line
-    }, []);
+    //     if (localStorage.getItem('token')) {
+    //         history("/");
+    //     } else {
+    //         history("/login");
+    //     }
+    //     // eslint-disable-next-line
+    // }, []);
 
     const HandleSubmit = (e) => {
         e.preventDefault();
