@@ -30,7 +30,7 @@ const Home = () => {
         data.innerHTML = `<h5 class="pt-3">Result</h5>`;
         data.append(x, space);
         data.append(y, space);
-        while (num < 10) {
+        while (num < 9) {
             console.log(fn);
 
             fn = x + y;
