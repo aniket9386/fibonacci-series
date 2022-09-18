@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     // let history = useNavigate();
@@ -29,15 +29,15 @@ const Home = () => {
         console.log(x);
         data.innerHTML = `<h5 class="pt-3">Result</h5>`;
         data.append(x, space);
-        // data.append(y, space);
+        data.append(y, space);
         while (num < 10) {
             console.log(fn);
-            data.append(fn, space);
 
             fn = x + y;
             x = y;
             y = fn;
             ++num
+            data.append(fn, space);
         }
         setInputn({ number1: "", number2: "" })
 
